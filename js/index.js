@@ -8,6 +8,23 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#burger-menu').classList.remove('burger__menu_open')
   })
 
+  document.querySelector(".header__search-button").addEventListener("click", function() {
+    document.querySelector(".header__search").classList.add("search-active");
+  })
+
+  document.addEventListener("click", function(e) {
+    let target = e.target;
+    let form = document.querySelector(".header__search");
+    if (!target.closest(".header__search-container")) {
+    form.classList.remove("search-active");
+      form.querySelector("input").value = "";
+    }
+  })
+
+  document.querySelector(".header__search-close").addEventListener("click", function() {
+    document.querySelector(".header__search").classList.remove("search-active");
+  })
+
   document.querySelectorAll(".hero__select-btn").forEach(item => {
     item.addEventListener("click", function() {
       let btn = this;
@@ -64,6 +81,7 @@ window.addEventListener('DOMContentLoaded', function() {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
         grid: {
           fill: 'row',
           rows: 1
@@ -71,8 +89,18 @@ window.addEventListener('DOMContentLoaded', function() {
         spaceBetween: 0
       },
 
+      577: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        grid: {
+          rows: 2
+        },
+        spaceBetween: 34
+      },
+
       767: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         grid: {
           rows: 2
         },
@@ -81,6 +109,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
       1025: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         grid: {
           rows: 2
         },
@@ -89,6 +118,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
       1441: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
         grid: {
           rows: 2
         },
@@ -260,24 +290,28 @@ window.addEventListener('DOMContentLoaded', function() {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
 
         spaceBetween: 0
       },
 
       700: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
 
         spaceBetween: 34
       },
 
       769: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
 
         spaceBetween: 50
       },
 
       1200: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
 
         spaceBetween: 50
       }
@@ -328,24 +362,28 @@ window.addEventListener('DOMContentLoaded', function() {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
 
         spaceBetween: 0
       },
 
       576: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
 
         spaceBetween: 34
       },
 
       769: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
 
         spaceBetween: 50
       },
 
       1200: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
 
         spaceBetween: 34
       },
@@ -491,4 +529,80 @@ window.addEventListener('DOMContentLoaded', function() {
     },
   });
 
+
+});
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  /*ПОЛУЧАЕТ ТЕКУЩУЮ ШИРИНУ ЭКРАНА*/
+  var widthWind = document.querySelector('body').offsetWidth;
+  if (widthWind <= 576) {
+    document.querySelector('.editions__mobile-checkbox-close').addEventListener('click', function () {
+      document.querySelector('.editions__mobile-checkbox').removeAttribute('checked');
+    });
+
+    document.querySelector('.editions__mobile-head').addEventListener('click', function() {
+      document.querySelector('.editions__mobile-head').classList.toggle('editions__mobile-head_active');
+    });
+
+    let button = ".editions__mobile-head";
+  let labels = ".editions__mobile-checkbox-label";
+  let labelsList = ".editions__mobile-checkbox-list";
+  let labelsListActive = "checklist-active";
+  let labelActive = "editions__mobile-checkbox-label_active";
+  let animationClass = "animation-checkbox";
+  let inputCheckbox = ".editions__mobile-checkbox";
+
+  function checkboxToggle(a, b, c, labelsListActive, labelActive, animationClass, inputCheckbox) {
+    let btn = document.querySelector(a);
+    let labels = document.querySelectorAll(b);
+    let listLabels = document.querySelector(c);
+  btn.addEventListener("click", toggleSpoiler);
+    btn.addEventListener("keyup", function(e) {
+      console.log(e.key);
+      if (e.code === "Enter") {
+        toggleSpoiler();
+      }
+    })
+  function toggleSpoiler() {
+      if (!listLabels.classList.contains(labelsListActive)) {
+      listLabels.classList.add(labelsListActive);
+      labels.forEach(item => {
+       // item.classList.add("checkbox--label-active");
+        animationItem(item, labelActive, animationClass, "add");
+      })
+    } else {
+      listLabels.classList.remove(labelsListActive);
+      labels.forEach(item => {
+        if (item.querySelector(inputCheckbox).checked) {
+        animationItem(item, labelActive, animationClass, "add");
+        } else {
+          animationItem(item, labelActive, animationClass, "remove");
+        }
+        });
+    }
+    labels.forEach(item => {
+      item.addEventListener("click", function() {
+        if (!listLabels.classList.contains(labelsListActive)) {
+          animationItem(this, labelActive, animationClass, "remove");
+        }
+      });
+    })
+  }
+  function animationItem(item, class1, class2, f) {
+   if (f === "add") {
+      item.classList.add(class1);
+    setTimeout(function() {
+      item.classList.add(class2)
+    }, 100);
+
+   } else {
+       item.classList.remove(class2);
+    setTimeout(function() {
+      item.classList.remove(class1)
+    }, 300);
+    }
+  }
+  }
+  checkboxToggle(button, labels, labelsList, labelsListActive, labelActive, animationClass, inputCheckbox);
+  }
 });

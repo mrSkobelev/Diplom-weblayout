@@ -176,16 +176,19 @@
           Войти
         </a>
       </nav>
-      <button class="header__serach-button bg-focus">
-        <svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
-        </svg>
-      </button>
-      <form class="header__search" action="">
-        <input class="header__search-input" type="search">
-        <button class="header__search-btn"></button>
-      </form>
+      <div class="header__search-container">
+        <button class="header__search-button bg-focus">
+          <svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+          </svg>
+        </button>
+        <form class="header__search" action="">
+          <button class="header__search-btn"></button>
+          <input class="header__search-input" type="search">
+          <button class="header__search-close"></button>
+        </form>
+      </div>
     </div>
   </header>
 
@@ -1690,6 +1693,109 @@
                 <label class="editions__checkbox-label" for="magas">Журналы и газеты</label>
               </li>
             </ul>
+            <div class="editions__mobile-checkbox-container">
+              <h2 class="editions__mobile-head" tabindex="0">
+                Категории
+              </h2>
+              <ul class="editions__mobile-checkbox-list">
+                <li class="editions__mobile-checkbox-item">
+                  <label  class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Бестселлеры</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Искусство</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Архитектура</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" checked />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Дизайн</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label  class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Мода</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Детям</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Художественная литература</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Публицистика</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label  class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Путеводители</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Философия</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Учебная литература</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+                <li class="editions__mobile-checkbox-item">
+                  <label class="editions__mobile-checkbox-label">
+                    <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
+                    <span class="editions__mobile-checkbox-custom"></span>
+                    <span class="editions__mobile-checkbox-text">Журналы и газеты</span>
+                    <button class="editions__mobile-checkbox-close"></button>
+                  </label>
+                </li>
+              </ul>
+            </div>
             <label class="editions__price-label" for="price-block">Цена</label>
             <div class="editions__price-block" id="price-block">
               <label class="price__block-label" for="price-from">От</label>
