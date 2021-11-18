@@ -289,13 +289,13 @@ window.addEventListener('DOMContentLoaded', function() {
 
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         slidesPerGroup: 1,
 
-        spaceBetween: 0
+        spaceBetween: 15
       },
 
-      700: {
+      576: {
         slidesPerView: 2,
         slidesPerGroup: 2,
 
@@ -509,7 +509,47 @@ window.addEventListener('DOMContentLoaded', function() {
 
   const swiperEvent = new Swiper('.events__swiper', {
     // Optional parameters
-    loop: true,
+    loop: false,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+
+        spaceBetween: 0
+      },
+
+      650: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+
+        spaceBetween: 34
+      },
+
+      769: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+
+        spaceBetween: 50
+      },
+
+      1200: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+
+        spaceBetween: 34
+      },
+
+      1700: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50
+      },
+    },
+
+
 
     // If we need pagination
     pagination: {
@@ -518,10 +558,10 @@ window.addEventListener('DOMContentLoaded', function() {
     },
 
     // Navigation arrows
-   /*  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }, */
+    navigation: {
+      nextEl: '.events-swiper-button-next',
+      prevEl: '.events-swiper-button-prev',
+    },
 
     // And if we need scrollbar
     scrollbar: {
