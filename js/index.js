@@ -337,9 +337,24 @@ window.addEventListener('DOMContentLoaded', function() {
     autoplay: false,
   });
 
-  document.querySelector('.projects__tooltip').addEventListener('click', function() {
+  /* document.querySelector('.projects__tooltip').addEventListener('click', function() {
     document.querySelector('.projects__tooltip').classList.toggle('projects__tooltip_close');
     document.querySelector('.projects__tooltip-description').classList.toggle('projects__tooltip-description_active');
+  }); */
+
+  tippy('#tool-1', {
+    content: "Пример современных тенденций - современная методология разработки",
+    theme: 'purpule',
+  });
+
+  tippy('#tool-2', {
+    content: "Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции",
+    theme: 'purpule',
+  });
+
+  tippy('#tool-3', {
+    content: "В стремлении повысить качество",
+    theme: 'purpule',
   });
 
   const swiper4 = new Swiper('.projects__swiper', {
