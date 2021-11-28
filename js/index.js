@@ -570,6 +570,7 @@ window.addEventListener('DOMContentLoaded', function() {
     pagination: {
       el: '.events-swiper-pagination',
       type: 'bullets',
+      clickable: 'true',
     },
 
     // Navigation arrows

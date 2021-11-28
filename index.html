@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/choices.min.css">
@@ -184,7 +186,7 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
           </svg>
         </button>
-        <form class="header__search" action="">
+        <form class="header__search" action="https://jsonplaceholder.typicode.com/posts">
           <button class="header__search-btn"></button>
           <input class="header__search-input" type="search">
           <button class="header__search-close"></button>
@@ -203,7 +205,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <article class="hero__menu">
+      <div class="hero__menu">
         <div class="container hero__menu-block">
           <ul class="hero__select-block">
             <li class="hero__select-item">
@@ -307,19 +309,19 @@
             <button class="hero__search-btn" type="submit"></button>
           </form>
         </div>
-      </article>
-      <article class="hero__description">
+      </div>
+      <div class="hero__description">
         <div class="container hero__description-block">
-          <h1 class="hero__heading">
+          <h2 class="hero__heading">
             Прикоснитесь к прекрасному
-          </h1>
+          </h2>
           <p class="hero__text">
             Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
             предложений.
           </p>
           <a class="hero__link-subscribe" href="">Подписаться на рассылку</a>
         </div>
-      </article>
+      </div>
     </section>
     <section class="about" id="_about">
       <div class="container adout__container">
@@ -347,9 +349,9 @@
           <div class="galery__select-menu">
             <label class="galery__select_label" for="gal-sel">Фильтр:</label>
             <select class="galery__select" name="galery-select" id="gal-sel">
-              <option value="" placeholder>Живопись</option>
-              <option value="">Рисунок</option>
-              <option value="">Скульптура</option>
+              <option value="Живопись">Живопись</option>
+              <option value="Рисунок">Рисунок</option>
+              <option value="Скульптура">Скульптура</option>
             </select>
           </div>
           <div class="galery__note">
@@ -1789,7 +1791,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Бестселлеры</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1797,7 +1799,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Искусство</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1805,7 +1807,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Архитектура</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1813,7 +1815,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" checked />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Дизайн</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1821,7 +1823,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Мода</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1829,7 +1831,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Детям</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1837,7 +1839,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Художественная литература</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1845,7 +1847,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Публицистика</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1853,7 +1855,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Путеводители</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1861,7 +1863,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Философия</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1869,7 +1871,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Учебная литература</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
                 <li class="editions__mobile-checkbox-item">
@@ -1877,7 +1879,7 @@
                     <input type="checkbox" class="editions__mobile-checkbox visually-hidden" />
                     <span class="editions__mobile-checkbox-custom"></span>
                     <span class="editions__mobile-checkbox-text">Журналы и газеты</span>
-                    <button class="editions__mobile-checkbox-close"></button>
+                    <span class="editions__mobile-checkbox-close"></span>
                   </label>
                 </li>
               </ul>
@@ -1890,7 +1892,7 @@
               <label class="price__block-label" for="price-to">до</label>
               <input class="price__block-input" id="price-to" name="value" placeholder="25 000" type="text"
                 data-mask="number">
-              <label class="price__block-label" for="">руб.</label>
+              <label class="price__block-label" for="price-to">руб.</label>
             </div>
           </div>
           <div class="editions__block-slider">
@@ -2272,13 +2274,13 @@
       </div>
     </section>
     <section class="contacts" id="_contacts">
-      <article>
+      <div>
         <div class="container contacts__container">
           <h2 class="contacts__heading">
             Контакты
           </h2>
         </div>
-      </article>
+      </div>
       <article class="contacts__map-container">
         <div class="container">
           <div class="contacts__adress">
@@ -2289,8 +2291,8 @@
               Леонтьевский переулок, дом 5/1
             </address>
             <div class="contacts__map" id="map"></div>
-            <form class="contacts__form" id="form" action="" method="">
-              <h4 class="contacts__form-label" for="form">Заказать обратный звонок</h4>
+            <form class="contacts__form" id="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+              <label class="contacts__form-label" for="form">Заказать обратный звонок</label>
               <div class="contacts__form-item">
                 <input class="contacts__form-block" type="text" id="name" name="name" placeholder="Имя*" data-validate-field="name">
               </div>
@@ -2316,7 +2318,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z" fill="white"/>
                     <defs>
                     <lineargradient id="paint0_linear" x1="20" y1="0" x2="20" y2="39.7033" gradientunits="userSpaceOnUse">
-                    <stop stop-color="#2AABEE"/>
+                    <stop offset="1" stop-color="#2AABEE"/>
                     <stop offset="1" stop-color="#229ED9"/>
                     </lineargradient>
                     </defs>
@@ -2449,7 +2451,7 @@
   <script src="js/simplebar.min.js"></script>
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/imask.js"></script>

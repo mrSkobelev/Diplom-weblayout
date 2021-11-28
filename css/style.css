@@ -152,6 +152,7 @@ html {
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__burger-menu {
@@ -184,6 +185,7 @@ html {
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .burger__menu-close:active svg rect {
@@ -202,6 +204,7 @@ html {
   line-height: 64px;
   font-weight: 600;
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .burger__menu-link:active    {
@@ -226,6 +229,7 @@ html {
   background-repeat: no-repeat;
   background-size: 13px;
   background-position: 87px center;
+  cursor: pointer;
 }
 
 .burger__menu-enter:focus-visible {
@@ -288,6 +292,7 @@ html {
   font-weight: 400;
   letter-spacing: 1px;
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .header__enter {
@@ -303,6 +308,7 @@ html {
   background-repeat: no-repeat;
   background-size: 13px;
   background-position: 5px center;
+  cursor: pointer;
 }
 
 .header__enter::after {
@@ -405,6 +411,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .header__search-input:focus + .header__search-btn {
@@ -422,6 +429,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* hero */
@@ -509,6 +517,7 @@ html {
   font-weight: 400;
   color: var(--color-white);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .hero__select-btn:active:not(:focus-visible) {
@@ -841,6 +850,7 @@ html {
   font-weight: 700;
   color: var(--color-white);
   background-color: var(--color-light-purpule);
+  cursor: pointer;
 }
 
 .hero__link-subscribe::before {
@@ -1003,7 +1013,7 @@ html {
 }
 
 .choices__list--dropdown .choices__item--selectable {
-  padding-right: 10;
+  padding-right: 10px;
 }
 
 .choices__list--dropdown .choices__item--selectable:after {
@@ -1165,6 +1175,7 @@ html {
   font-weight: 400;
   outline: none;
   color: #c383f3;
+  cursor: pointer;
 }
 
 .galery__note-link::after {
@@ -1652,6 +1663,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .ui-icon, .ui-widget-content .ui-icon {
@@ -1659,6 +1671,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .ui-accordion .ui-accordion-header:focus-visible .ui-icon {
@@ -1991,6 +2004,7 @@ html {
   line-height: 32px;
   font-weight: 400;
   color: var(--color-light-purpule);
+  cursor: pointer;
 }
 
 .events__swiper-link::before {
@@ -2059,6 +2073,7 @@ html {
   border-radius: 100px;
   background-color: transparent;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .events-swiper-button-prev svg path + path {
@@ -2086,6 +2101,7 @@ html {
   border-radius: 100px;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .events-swiper-button-next svg path + path {
@@ -2317,6 +2333,7 @@ html {
   background-size: cover;
   background-position: center;
   opacity: 0;
+  cursor: pointer;
 }
 
 .editions__mobile-checkbox:checked + .editions__mobile-checkbox-custom + .editions__mobile-checkbox-text + .editions__mobile-checkbox-close {
@@ -2371,6 +2388,7 @@ html {
   font-weight: 400;
   color: var(--color-white);
   background-color: rgba(157, 92, 208, 0.5);
+  cursor: pointer;
 }
 
 .price__block-input:focus-visible {
@@ -2793,6 +2811,7 @@ html {
   z-index: 1;
   outline: none;
   color: var(--color-light-purpule);
+  cursor: pointer;
 }
 
 .project__link::after {
@@ -2874,6 +2893,7 @@ html {
   height: 100%;
   border: 1px solid var(--color-grey);
   opacity: 0.4;
+  cursor: pointer;
 }
 
 .projects__swiper-link:focus-visible {
@@ -3081,6 +3101,7 @@ html {
   line-height: 32px;
   font-weight: 400;
   color: var(--color-dark-gray);
+  cursor: pointer;
 }
 
 .contacts__form-block:focus-visible {
@@ -3110,6 +3131,7 @@ html {
   font-weight: 700;
   color: var(--color-light-purpule);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .contacts__form-button::before {
@@ -3158,6 +3180,7 @@ html {
 
 .contacts__adress-link {
   position: relative;
+  cursor: pointer;
 }
 
 .contacts__adress-link::before {
@@ -3199,6 +3222,7 @@ html {
   position: relative;
   z-index: 2;
   outline: none;
+  cursor: pointer;
 }
 
 .footer__logo::before {
@@ -3231,6 +3255,10 @@ html {
 
 .footer__social-item:not(:last-child) {
   margin-right: 20px;
+}
+
+.footer__social-link {
+  cursor: pointer;
 }
 
 .footer__social-link:focus-visible path {
@@ -3851,7 +3879,7 @@ html {
   }
 
   .tippy-box[data-theme~='purpule'] {
-    max-width: 240 px;
+    max-width: 240px;
     border-radius: 0px;
     text-align: center;
     background-color: var(--color-light-purpule);
@@ -3941,6 +3969,7 @@ html {
 
   .galery__swiper-button {
     width: 100%;
+    cursor: pointer;
   }
 
   .galery__image {
@@ -4547,6 +4576,20 @@ html {
     margin-right: 32px;
   }
 
+  .accordion-empty-frame {
+    width: 90px;
+    height: 130px;
+    background-image: url(../img/catalog-empty-320.svg);
+  }
+
+  .accordion-empty-heading {
+    font-size: 18px;
+  }
+
+  .catalog__profile {
+    width: 100%;
+  }
+
   .btn_active {
 
     width: 32px;
@@ -4560,22 +4603,27 @@ html {
 
   .btn_fra {
     background-size: cover;
+    cursor: pointer;
   }
 
   .btn_ger {
     background-size: cover;
+    cursor: pointer;
   }
 
   .btn_ita {
     background-size: cover;
+    cursor: pointer;
   }
 
   .btn_rus {
     background-size: cover;
+    cursor: pointer;
   }
 
   .btn_bel {
     background-size: cover;
+    cursor: pointer;
   }
 
   .catalog__text {
@@ -4632,11 +4680,13 @@ html {
   }
 
   .events__swiper-text {
-    margin-bottom: 59px;
+    max-width: 238px;
+    margin-bottom: 50px;
   }
 
   .events-swiper-pagination {
     display: flex;
+    padding: 0;
   }
 
   .events-swiper-button-next {
@@ -4647,13 +4697,25 @@ html {
     display: none;
   }
 
+  .events__swiper-span {
+    right: 10px;
+  }
+
+  .events__swiper-description {
+    padding: 60px 20px 47px 27px;
+  }
+
+  .events__swiper-block:first-child .events__swiper-picture + .events__swiper-description .events__swiper-heading {
+    margin-bottom: 37px;
+  }
+
   .editions {
     background-image: url(../img/editions-background-320.png);
   }
 
   .editions__container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 48px;
+    padding-bottom: 12px;
   }
 
   .editions__price-block {
@@ -4680,14 +4742,28 @@ html {
 
   .editions__swiper {
     overflow: visible;
+    padding-left: 0;
+  }
+
+  .editions__swiper-img {
+    margin-bottom: 5px;
+  }
+
+  .editions__swiper-heading {
+    line-height: 16px;
   }
 
   .editions__swiper-author {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 
   .editions__swiper-price {
-    top: 200px;
+    top: 184px;
+  }
+
+  .editions__swiper-button {
+    width: 130px;
+    font-size: 12px;
   }
 
   .editions__mobile-block {
@@ -4747,7 +4823,7 @@ html {
   }
 
   .tippy-box[data-theme~='purpule'] {
-    max-width: 240 px;
+    max-width: 240px;
     border-radius: 0px;
     text-align: center;
     background-color: var(--color-grey);
